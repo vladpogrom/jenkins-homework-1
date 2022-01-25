@@ -11,8 +11,8 @@ public class CalendarComponent {
 
     static SelenideElement dateInputLocator = $("#dateOfBirthInput");
     static SelenideElement yearSelectLocator = $("[class*='year-select']");
-    public SelenideElement monthSelectLocator = $("[class*='month-select']");
-    public ElementsCollection daySelectLocator = $$("[role=option]");
+    static SelenideElement monthSelectLocator = $("[class*='month-select']");
+    static ElementsCollection daySelectLocator = $$("[role=option]");
 
     public void setDate(int day, int month, String year) {
         dateInputLocator.click();
