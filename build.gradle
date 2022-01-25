@@ -10,7 +10,7 @@ repositories {
 group 'qa.guru.allure'
 version '1.0-SNAPSHOT'
 
-def     allureVersion = "2.17.2",
+def     allureVersion = "2.13.10",
         junitVersion = "5.8.2"
 
 compileTestJava {
