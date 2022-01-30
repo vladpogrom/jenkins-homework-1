@@ -3,6 +3,7 @@ package pageObjectHomework.tests;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
@@ -10,9 +11,14 @@ import static io.qameta.allure.Allure.step;
 public class HomeworkTestsPageObject extends TestBase {
 
     @Test
+    @Tag("properties")
     @Owner("vladpogrom")
     @DisplayName("Тесты на форму /practice-form")
     void fillForm() {
+        String credentials = System.getProperty("user1", "1234");
+        String browser = System.getProperty("browser", "chrome");
+        String browserSize = System.getProperty("browserSize", "1920x1080");
+        String version = System.getProperty("version", "91");
         step("Открываем страницу", () -> {
             registrationPage.openForm();
         });
