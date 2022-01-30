@@ -63,8 +63,8 @@ tasks.withType(Test) {
     }
 }
 
-task prop_tests(type: Test) {
-    useJUnitPlatform{
-        includeTags "properties"
-    }
-}
+//task prop_tests(type: Test) {
+//    useJUnitPlatform{
+//        includeTags "homework"
+//    }
+//}

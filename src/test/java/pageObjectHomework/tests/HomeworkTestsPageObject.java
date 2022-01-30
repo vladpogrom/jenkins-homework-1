@@ -11,7 +11,7 @@ import static io.qameta.allure.Allure.step;
 public class HomeworkTestsPageObject extends TestBase {
 
     @Test
-    @Tag("properties")
+//    @Tag("homework")
     @Owner("vladpogrom")
     @DisplayName("Тесты на форму /practice-form")
     void fillForm() {
