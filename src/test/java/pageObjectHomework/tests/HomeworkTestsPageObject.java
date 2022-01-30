@@ -15,7 +15,7 @@ public class HomeworkTestsPageObject extends TestBase {
     @Owner("vladpogrom")
     @DisplayName("Тесты на форму /practice-form")
     void fillForm() {
-        String credentials = System.getProperty("user1", "1234");
+        String branch = System.getProperty("branch", "b2c-test");
         String browser = System.getProperty("browser", "chrome");
         String browserSize = System.getProperty("browserSize", "1920x1080");
         String version = System.getProperty("version", "91");
