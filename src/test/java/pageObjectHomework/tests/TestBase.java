@@ -36,9 +36,8 @@ public class TestBase {
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
         Configuration.remote = "https://" + userLogin + ":" + userPassword + "@" + selenoidUrl;
-        String browser = System.getProperty("browser", "chrome");
-        String version = System.getProperty("version", "91");
-        String browserSize = System.getProperty("browserSize", "1920x1080");
+        String browser = System.getProperty("browser");
+        String version = System.getProperty("version");
     }
 
     @AfterEach
