@@ -30,15 +30,15 @@ public class TestBase {
         String userLogin = System.getProperty("user");
         String userPassword = System.getProperty("pass");
         String selenoidUrl = System.getProperty("remote");
-        String browser = System.getProperty("browser", "chrome");
-        String version = System.getProperty("version", "91");
-        String browserSize = System.getProperty("browserSize", "1920x1080");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
         Configuration.remote = "https://" + userLogin + ":" + userPassword + "@" + selenoidUrl;
+        String browser = System.getProperty("browser", "chrome");
+        String version = System.getProperty("version", "91");
+        String browserSize = System.getProperty("browserSize", "1920x1080");
     }
 
     @AfterEach
