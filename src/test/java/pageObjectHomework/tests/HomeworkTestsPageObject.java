@@ -11,15 +11,9 @@ import static io.qameta.allure.Allure.step;
 public class HomeworkTestsPageObject extends TestBase {
 
     @Test
-//    @Tag("homework")
     @Owner("vladpogrom")
     @DisplayName("Тесты на форму /practice-form")
     void fillForm() {
-        String browser = System.getProperty("browser", "chrome");
-        String version = System.getProperty("version", "91");
-        String browserSize = System.getProperty("browserSize", "1920x1080");
-        String branch = System.getProperty("branch", "b2c-test");
-
         step("Открываем страницу", () -> {
             registrationPage.openForm();
         });
