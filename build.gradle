@@ -62,9 +62,3 @@ tasks.withType(Test) {
         }
     }
 }
-
-//task prop_tests(type: Test) {
-//    useJUnitPlatform{
-//        includeTags "homework"
-//    }
-//}
